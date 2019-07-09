@@ -18,7 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/landingdong_apps" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (env_ldd)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (blue_ding_dong_venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="MxOnline" />
   </component>

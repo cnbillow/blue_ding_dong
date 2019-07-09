@@ -46,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'daily_fresh_demo.urls'
+ROOT_URLCONF = 'blue_ding_dong.urls'
 
 TEMPLATES = [
     {
@@ -65,7 +65,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'daily_fresh_demo.wsgi.application'
+WSGI_APPLICATION = 'blue_ding_dong.wsgi.application'
 
 DATABASES = {
     'default': {
