@@ -1,0 +1,409 @@
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.market-know-box {
+		background: #ebebeb;
+		padding: 70px 0 20px 0;
+	}
+	.mkb-content {
+		margin: 0 5%;
+		position: relative;
+	}
+	.mkb-img {
+		display: block;
+	}
+	.mkbc-content {
+		position: absolute;
+		width: 100%;
+		top: 0;
+	}
+	.mkbcc-left {
+		width: 23%;
+		float: left;
+		padding: 50px;
+		margin-top: -15px;
+	}
+	.mkbcc-right {
+		width: 77%;
+		float: left;
+		padding-right: 30px;
+		font-size: 16px;
+		color: #565656;
+		padding-top: 25px;
+	}
+	.mkbcc-right div:first-of-type {
+		padding-bottom: 25px;
+	}
+	.mkbcc-right div:last-of-type {
+		line-height: 35px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.market-know-box {
+		background: #ebebeb;
+		padding: 40px 0 20px 0;
+	}
+	.mkb-content {
+		margin: 0 2%;
+		position: relative;
+	}
+	.mkb-img {
+		display: none;
+	}
+	.mkbc-content {
+		width: 100%;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid #999999;
+	}
+	.mkbcc-left {
+		width: 100%;
+		float: left;
+		padding-right: 70%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.mkbcc-right {
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+		color: #565656;
+	}
+	.mkbcc-right div:first-of-type {
+		padding-bottom: 25px;
+	}
+	.mkbcc-right div:last-of-type {
+		line-height: 35px;
+	}
+}
+
+
+/*行业痛点*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.market-point-box {
+		padding: 60px 0 30px 0;
+	}
+	.mpb-item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.mpb-item2 {
+		width: 100%;
+		margin-top: 100px;
+		margin-bottom: 20px;
+	}
+	.mpbi-left1 {
+		width: 23%;
+		float: left;
+		padding: 70px;
+	}
+	.mpbi-left2 {
+		width: 23%;
+		float: left;
+		padding: 70px;
+		margin-top: 20px;
+	}
+	.mpbi-right {
+		width: 77%;
+		float: left;
+	}
+	.mpbi-bt-box {
+		padding-bottom: 20px;
+	}
+	.mpb-bt-text1 {
+		color: #8d8d8d;
+		font-size: 25px;
+		text-align: left;
+		font-weight: 250;
+	}
+	.mpb-bt-eng {
+		color: #d0d0d0;
+		font-size: 13px;
+		text-align: left;
+		font-weight: 250;
+	}
+	.mpbir-content1 {
+		background: #f5f5f5;
+		padding: 40px 0;
+		padding-left: 15%;
+		font-size: 19px;
+		color: #525252;
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	.mpbir-content2 {
+		background: #f5f5f5;
+		padding: 60px 0;
+		padding-left: 15%;
+		font-size: 19px;
+		color: #525252;
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	.mpbir-content3 {
+		background: #f5f5f5;
+		padding: 60px 0;
+		padding-left: 5%;
+		font-size: 19px;
+		color: #525252;
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.market-point-box {
+		padding: 40px 0 30px 0;
+	}
+	.mpb-item {
+		width: 100%;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.mpb-item2 {
+		width: 100%;
+		position: relative;
+		margin-bottom: 50px;
+	}
+	.mpbi-left1 {
+		position: absolute;
+		width: 16%;
+		top: -5px;
+	}
+	.mpbi-left2 {
+		position: absolute;
+		width: 16%;
+		top: -10px;
+	}
+	.mpbi-right {
+		width: 100%;
+	}
+	.mpbi-bt-box {
+		padding-bottom: 20px;
+		padding-left: 22%;
+	}
+	.mpb-bt-text1 {
+		color: #8d8d8d;
+		font-size: 22px;
+		text-align: left;
+		font-weight: 250;
+	}
+	.mpb-bt-eng {
+		color: #d0d0d0;
+		font-size: 11px;
+		text-align: left;
+		font-weight: 250;
+	}
+	.mpbir-content1 {
+		background: #f5f5f5;
+		padding: 40px 10px;
+		font-size: 17px;
+		color: #525252;
+		/*font-style: italic;*/
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	.mpbir-content2 {
+		background: #f5f5f5;
+		padding: 40px 10px;
+		font-size: 17px;
+		color: #525252;
+		/*font-style: italic;*/
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	.mpbir-content3 {
+		background: #f5f5f5;
+		padding: 40px 10px;
+		font-size: 17px;
+		color: #525252;
+		/*font-style: italic;*/
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+}
+
+
+/*价值呈现*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.jzcx-content {
+		background: #f5f5f5;
+		padding: 40px 0px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 35px;
+		color: #2462AE;
+		margin-bottom: 30px;
+		letter-spacing: 5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.jzcx-content {
+		background: #f5f5f5;
+		padding: 40px 0px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 35px;
+		color: #f8b62d;
+		margin-bottom: 20px;
+		letter-spacing: 3px;
+	}
+}
+
+.jzcx-content span {
+	font-size: 30px;
+}
+
+.nei-box2 {
+	border: 1px solid #ffffff;
+	padding: 20px 40px;
+	text-align: center;
+
+}
+/*解决方案*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.del-with-pb-box {
+		padding: 60px 0;
+	}
+	.dwb-item1 {
+		width: 32.33%;
+		float: left;
+		margin-right: 1%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #2462AE;
+		padding: 10px 10px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+		/*border: 1px solid #000000;*/
+	}
+	.dwb-item2 {
+		width: 32.33%;
+		float: left;
+		margin: 0 .5%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #2462AE;
+		padding: 10px 10px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.dwb-item3 {
+		width: 32.33%;
+		float: left;
+		margin-left: 1%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #2462AE;
+		padding: 10px 10px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.dwbi-bt {
+		text-align: center;
+		font-size: 22px;
+		padding-top: 15px;
+		color: #fff;
+	}
+	.dwbi-content {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		line-height: 35px;
+		font-size: 18px;
+		color: #FFFFFF;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.del-with-pb-box {
+		padding: 60px 0 30px 0;
+	}
+	.dwb-item1 {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #f8b62d;
+		padding: 30px 50px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.dwb-item2 {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #f8b62d;
+		padding: 30px 50px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.dwb-item3 {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		background: #f8b62d;
+		padding: 30px 50px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.dwbi-bt {
+		text-align: center;
+		font-size: 20px;
+		padding-top: 15px;
+		color: #9e6b00;
+	}
+	.dwbi-content {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		line-height: 35px;
+		font-size: 17px;
+		color: #FFFFFF;
+	}
+}
+.dwb-item1:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+.dwb-item2:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+.dwb-item3:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block center_body %}
+
+    <div class="navbar_con">
+		<div class="navbar clearfix">
+			<div class="subnav_con fl">
+				<h1>全部商品分类</h1>
+				<span></span>
+				<ul class="subnav">
+                    {% for type in typeinfo_all %}
+                        {% if type.id == 1 %}
+                            <li><a href="/list{{ type.id }}_1_1" class="fruit">{{ type.ttitle }}</a></li>
+                        {% elif type.id == 2 %}
+                            <li><a href="/list{{ type.id }}_1_1" class="seafood">{{ type.ttitle }}</a></li>
+                        {% elif type.id == 3 %}
+                            <li><a href="/list{{ type.id }}_1_1" class="meet">{{ type.ttitle }}</a></li>
+                        {% elif type.id == 4 %}
+                            <li><a href="/list{{ type.id }}_1_1" class="egg">{{ type.ttitle }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+				</ul>
+			</div>
+			<ul class="navlist fl">
+				<li><a href="{% url "df_goods:index" %}">首页</a></li>
+				<li class="interval">|</li>
+{#				<li><a href="">手机生鲜</a></li>#}
+{#				<li class="interval">|</li>#}
+{#				<li><a href="">抽奖</a></li>#}
+			</ul>
+		</div>
+	</div>
+
+	<div class="breadcrumb">
+		全部分类 > {{ title }}
+		{% if id|default:' ' != ' ' %}
+        > 商品详情
+		{% endif %}
+	</div>
+
+{% block center_content %}
+
+{% endblock center_content %}
+
+
+
+{% endblock center_body %}

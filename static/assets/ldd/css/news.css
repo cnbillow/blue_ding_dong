@@ -1,0 +1,62 @@
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.news-box {
+		padding: 70px 0;
+	}
+	.news-item {
+		width: 46%;
+		margin: 0 2%;
+		float: left;
+		background: #f6f6f6;
+		margin-bottom: 30px;
+	}
+	.ni-content {
+		padding: 40px 50px;
+	}
+	.ni-text {
+		height: 150px;
+		line-height: 35px;
+		font-size: 18px;
+		color: #8e8e8e;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.news-box {
+		padding: 50px 0;
+	}
+	.news-item {
+		width: 100%;
+		background: #f6f6f6;
+		margin-bottom: 30px;
+	}
+	.ni-content {
+		padding: 40px 30px;
+	}
+	.ni-text {
+		line-height: 35px;
+		font-size: 18px;
+		color: #8e8e8e;
+	}
+}
+
+.ni-bt {
+	font-size: 22px;
+	font-weight: 350;
+	color: #353535;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ni-time {
+	color: #8e8e8e;
+	font-size: 15px;
+	padding-bottom: 30px;
+}
+
+.ni-text a {
+	color: ##23527c;
+}

@@ -1,0 +1,112 @@
+/*蔚蓝计划*/
+.wl-content{
+	background: #f5f5f5;
+	padding: 40px 0px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+	color: #f59d5a;
+}
+.wl-content span{
+	font-size: 25px;
+}
+/*职业经理*/
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.zyjl-box{
+	padding: 90px 0 70px 0;
+}
+.zyjl-box1{
+	padding: 20px 0 90px 0;
+}
+.zyjl-content{
+	display: table;
+	width: 100%;
+}
+.zyjlc-left{
+	display: table-cell;
+	width: 52%;
+	overflow: hidden;
+}
+.zyjlc-right{
+	display: table-cell;
+	width: 48%;
+	background: #ebebeb;
+	position: relative;
+}
+.zyjlr-content{
+	width: 34%;
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 35px;
+	position: absolute;
+	left: 18%;
+	margin-top: 20%;
+	padding-bottom: 40px;
+	border-bottom: 6px solid #f57f00;
+}
+.zyjlr-content1{
+	width: 34%;
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 35px;
+	position: absolute;
+	right: 24%;
+	margin-top: 20%;
+	padding-bottom: 40px;
+	border-bottom: 6px solid #f57f00;
+}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.zyjl-box{
+	padding: 40px 0 50px 0;
+}
+.zyjl-box1{
+	padding: 0px 0 70px 0;
+}
+.zyjl-content{
+	/*display: table;*/
+	width: 100%;
+}
+.zyjlc-left{
+	overflow: hidden;
+}
+.zyjlc-right{
+	background: #ebebeb;
+	position: relative;
+	padding: 40px 0;
+}
+.zyjlr-content{
+	width: 54%;
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 35px;
+	margin-left: 23%;
+	padding-bottom: 40px;
+	border-bottom: 6px solid #f57f00;
+}
+.zyjlr-content1{
+	width: 54%;
+	font-size: 18px;
+	color: #7d7d7d;
+	line-height: 35px;
+	margin-left: 23%;
+	padding-bottom: 40px;
+	border-bottom: 6px solid #f57f00;
+}
+}
+.zyjlr-content span{
+	font-size: 23px;
+}
+.zyjlr-content1 span{
+	font-size: 23px;
+}
+.zyjlc-left img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.zyjlc-left img:hover{
+  transform: scale(1.1);
+}

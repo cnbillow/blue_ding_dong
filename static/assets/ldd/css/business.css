@@ -1,0 +1,139 @@
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.hzlc-box {
+		padding: 70px 0;
+	}
+	.hzlc-content1 {
+		width: 75%;
+		margin: 0 auto;
+		color: #565656;
+		font-size: 25px;
+		font-weight: 320;
+		padding: 0px 0 60px 0;
+		text-align: center;
+		position: relative;
+	}
+	.hzlc-content1::before {
+		content: '';
+		/*CSS伪类用法*/
+		position: absolute;
+		/*定位背景横线的位置*/
+		top: 20%;
+		background: #CCCCCC;
+		/*宽和高做出来的背景横线*/
+		width: 38%;
+		height: 1px;
+		left: 0;
+	}
+	.hzlc-content1::after {
+		content: '';
+		/*CSS伪类用法*/
+		position: absolute;
+		/*定位背景横线的位置*/
+		top: 20%;
+		background: #CCCCCC;
+		/*宽和高做出来的背景横线*/
+		width: 38%;
+		height: 1px;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.hzlc-box {
+		padding: 50px 0;
+	}
+	.hzlc-content1 {
+		width: 90%;
+		margin: 0 auto;
+		color: #565656;
+		font-size: 20px;
+		font-weight: 320;
+		padding: 0px 0 60px 0;
+		text-align: center;
+		position: relative;
+	}
+	.hzlc-content1::before {
+		content: '';
+		/*CSS伪类用法*/
+		position: absolute;
+		/*定位背景横线的位置*/
+		top: 20%;
+		background: #CCCCCC;
+		/*宽和高做出来的背景横线*/
+		width: 23%;
+		height: 1px;
+		left: 0;
+	}
+	.hzlc-content1::after {
+		content: '';
+		/*CSS伪类用法*/
+		position: absolute;
+		/*定位背景横线的位置*/
+		top: 20%;
+		background: #CCCCCC;
+		/*宽和高做出来的背景横线*/
+		width: 23%;
+		height: 1px;
+		right: 0;
+	}
+}
+
+.hzlc-content2 {
+	margin: 20px 0;
+}
+
+
+/*加盟操作*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.jmcz-box {
+		background: #fafafa;
+		padding: 50px 0 130px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.jmcz-box {
+		background: #fafafa;
+		padding: 50px 0 80px 0;
+	}
+}
+
+
+/*商务合作*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.business-box {
+		padding: 70px 0 30px 0;
+	}
+	.index-bus-img {
+		position: relative;
+	}
+	.business-sub-box {
+		position: absolute;
+		width: 30%;
+		right: 21%;
+		bottom: 15%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.business-box {
+		padding: 40px 0 40px 0;
+	}
+	.index-bus-img {
+		position: relative;
+	}
+	.business-sub-box {
+		position: absolute;
+		width: 90%;
+		right: 5%;
+		bottom: 20px;
+	}
+}

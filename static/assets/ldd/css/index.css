@@ -1,0 +1,968 @@
+/*企业模块样式*/
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.qy-box {
+		padding: 50px 0;
+	}
+	.qy-item1 {
+		width: 100%;
+		float: left;
+		background: #F3F3F3;
+		margin-bottom: 15px;
+		cursor: pointer;
+		transition: background 0.5s;
+	}
+	.qy-item2 {
+		width: 100%;
+		float: left;
+		background: #F3F3F3;
+		cursor: pointer;
+		transition: background 0.5s;
+		margin-bottom: 15px;
+	}
+	.qy-item3 {
+		width: 100%;
+		float: left;
+		background: #F3F3F3;
+		cursor: pointer;
+		transition: background 0.5s;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.qy-box {
+		padding: 80px 0;
+	}
+	.qy-item1 {
+		width: 28%;
+		float: left;
+		background: #F3F3F3;
+		margin-right: 4%;
+	}
+	.qy-item2 {
+		width: 28%;
+		float: left;
+		background: #F3F3F3;
+		margin: 0 4%;
+	}
+	.qy-item3 {
+		width: 28%;
+		float: left;
+		background: #F3F3F3;
+		margin-left: 4%;
+	}
+}
+
+.nei-box {
+	margin: 10px;
+	border: 1px solid #eeeeee;
+	padding: 78px 20px 60px 20px;
+	text-align: center;
+}
+
+.qy-item1:hover{
+	background: #2462AE;
+}
+.qy-item2:hover{
+	background: #2462AE;
+}
+.qy-item3:hover{
+	background: #2462AE;
+}
+.qy-item1:hover .qi-bt{
+	color: #fff;
+}
+.qy-item2:hover .qi-bt{
+	color: #fff;
+}
+.qy-item3:hover .qi-bt{
+	color: #fff;
+}
+.qy-item1:hover .qi-text{
+	color: #fff;
+}
+.qy-item2:hover .qi-text{
+	color: #fff;
+}
+.qy-item3:hover .qi-text2{
+	color: #fff;
+}
+.qi-bt {
+	color: #2462AE;
+	font-size: 25px;
+	font-weight: 320;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+
+.qi-img {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.qi-text {
+	color: #565656;
+	font-size: 16px;
+	line-height: 3rem;
+	padding: 4rem 0;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+
+.qi-img2 {
+	width: 35%;
+	margin: 0 auto;
+}
+
+.qi-img-2 {
+	width: 28%;
+	margin: 0 auto;
+}
+
+.qi-text2 {
+	color: #565656;
+	font-size: 16px;
+	line-height: 3rem;
+	padding: 2.5rem 0;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+
+.qi-img-3 {
+	width: 55%;
+	margin: 0 auto;
+}
+
+
+/*关于我们模块*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-ab-box {
+		background: #f3f3f3;
+		padding: 100px 0;
+	}
+	.iab-img {
+		width: 40%;
+		float: left;
+	}
+	.iab-content {
+		width: 60%;
+		float: left;
+		padding-left: 35px;
+	}
+	.iab-bt-box {
+		padding: 1px 0 1px 0;
+	}
+	.iab-bt-box div:first-of-type {
+		color: #8d8d8d;
+		font-size: 35px;
+		font-weight: 250;
+	}
+	.iab-bt-box div:last-of-type {
+		color: #d0d0d0;
+		font-size: 16px;
+		font-weight: 250;
+	}
+	.iab-text {
+		color: #565656;
+		line-height: 3rem;
+		font-size: 16px;
+	}
+	.video-web{
+		display: none;
+	}
+	.video-pc{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-ab-box {
+		background: #f3f3f3;
+		padding: 50px 0;
+	}
+	.iab-img {}
+	.iab-content {
+		text-align: center;
+	}
+	.iab-bt-box {
+		padding: 20px 0 30px 0;
+	}
+	.iab-bt-box div:first-of-type {
+		color: #8d8d8d;
+		font-size: 25px;
+		font-weight: 250;
+	}
+	.iab-bt-box div:last-of-type {
+		color: #d0d0d0;
+		font-size: 13px;
+		font-weight: 250;
+	}
+	.iab-text {
+		color: #565656;
+		line-height: 3rem;
+		font-size: 16px;
+	}
+	.video-web{
+		display: block;
+	}
+	.video-pc{
+		display: none;
+	}
+}
+
+
+/*发展历程*/
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.dsj1 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #eaeaea;
+	top: -10px;
+	left: 49%;
+	display: block;
+}
+.time-content {
+	margin-top: 30px;
+	color: #565656;
+	text-align: center;
+	font-size: 32px;
+	background: #eaeaea;
+	padding: 40px 0;
+	font-weight: 350;
+	letter-spacing: 8px;
+	position: relative;
+}
+.delp-box {
+	padding: 70px 0;
+}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.dsj1 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #eaeaea;
+	top: -10px;
+	left: 49%;
+	display: none;
+}
+.time-content {
+	margin-top: 30px;
+	color: #565656;
+	text-align: center;
+	font-size: 25px;
+	background: #eaeaea;
+	padding: 40px 0;
+	font-weight: 350;
+	letter-spacing: 8px;
+	position: relative;
+}
+.delp-box {
+	padding: 60px 0 40px 0;
+}
+}
+
+.time-box {
+	text-align: center;
+}
+
+.time-box a {
+	color: #606060;
+	margin: 0 20px;
+	font-size: 20px;
+	font-weight: 250;
+}
+
+.tb-active {
+	color: #2462AE !important;
+	font-weight: 500 !important;
+}
+
+
+
+/*项目优势*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-ys-box {
+		padding: 40px 0 100px 0;
+	}
+	.iys-content {
+		position: relative;
+		height: 630px;
+	}
+	.iys-item1 {
+		position: absolute;
+		bottom: 0;
+		width: 28.8%;
+		left: 0;
+		background: #F3F3F3;
+		padding: 30px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.iys-item2 {
+		width: 42.4%;
+		position: absolute;
+		bottom: 0;
+		left: 28.8%;
+		background: #dbdbdb;
+		padding: 10px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.iys-item3 {
+		position: absolute;
+		bottom: 0;
+		width: 28.8%;
+		right: 0;
+		background: #F3F3F3;
+		padding: 30px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-ys-box {
+		padding: 40px 0 50px 0;
+	}
+	.iys-content {
+		position: relative;
+	}
+	.iys-item1 {
+		width: 100%;
+		background: #F3F3F3;
+		padding: 30px;
+		margin-bottom: 15px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.iys-item2 {
+		width: 100%;
+		background: #dbdbdb;
+		padding: 10px;
+		margin-bottom: 15px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+	.iys-item3 {
+		width: 100%;
+		background: #F3F3F3;
+		padding: 30px;
+		margin-bottom: 15px;
+		transition:All 0.4s ease-in-out;
+		-webkit-transition:All 0.4s ease-in-out;
+		-moz-transition:All 0.4s ease-in-out;
+		-o-transition:All 0.4s ease-in-out;
+	}
+}
+.iys-item1:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+.iys-item2:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+.iys-item3:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+.iys-bt1 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #a3a3a3;
+}
+
+.iys-bt1 div:first-of-type {
+	color: #565656;
+	font-size: 22px;
+	text-align: center;
+	font-weight: 250;
+}
+
+.iys-bt1 div:last-of-type {
+	color: #d0d0d0;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 250;
+}
+
+.iys-text-box {
+	padding: 20px 10px;
+	font-size: 14px;
+	color: #565656;
+	font-weight: 320;
+	line-height: 30px;
+}
+
+.iys-text-box div:first-of-type {
+	padding-bottom: 15px;
+}
+
+.iys-i2-box {
+	border: 1px solid #eeeeee;
+	padding: 20px;
+}
+
+.iys-bt2 {}
+
+.iys-bt2 div:first-of-type {
+	color: #5c5c5c;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 350;
+}
+
+.iys-bt2 div:last-of-type {
+	color: #7a7a7a;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 250;
+	padding-bottom: 15px;
+}
+
+.iys-text-box2 {
+	padding: 20px 15px;
+	font-size: 16px;
+	color: #5c5c5c;
+	font-weight: 320;
+	line-height: 30px;
+}
+
+.iys-text-box2 span {
+	color: #000000;
+	font-weight: 350;
+}
+
+.iys-text-box3 {
+	padding: 20px 5px 10px 5px;
+	font-size: 14px;
+	color: #5c5c5c;
+	font-weight: 320;
+	line-height: 25px;
+}
+
+.iys-text-box3 span {
+	color: #000000;
+	font-weight: 350;
+}
+
+
+/*合作品牌*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-hz-box {
+		background: #F7F7F7;
+		padding: 100px 0 70px 0;
+	}
+	.goods-hz-box {
+		background: #fff5e1;
+		padding: 100px 0 70px 0;
+	}
+	.ihz-content {}
+	.ihz-item {
+		width: 17%;
+		margin: 0 1.5%;
+		float: left;
+		margin-bottom: 45px;
+		border: 1px solid #EFEFEF;
+		border-radius: 5px;
+		overflow: hidden;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-hz-box {
+		background: #F7F7F7;
+		padding: 50px 0 30px 0;
+	}
+	.goods-hz-box {
+		background: #fff5e1;
+		padding: 50px 0 30px 0;
+	}
+	.ihz-content {}
+	.ihz-item {
+		width: 30.3%;
+		margin: 0 1.5%;
+		float: left;
+		margin-bottom: 20px;
+		border: 1px solid #EFEFEF;
+		border-radius: 5px;
+		overflow: hidden;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+	}
+}
+.ihz-item:hover{
+	-webkit-transform: scale(1.1);
+　　-moz-transform: scale(1.1);
+　　-o-transform: scale(1.1);
+　　-ms-transform: scale(1.1);
+}
+
+/*服务范围*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-ser-box {
+		padding: 100px 0;
+	}
+	.iserc-pc {
+		display: block !important;
+	}
+	.iserc-web {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-ser-box {
+		padding: 50px 0;
+	}
+	.iserc-pc {
+		display: none !important;
+	}
+	.iserc-web {
+		display: block !important;
+	}
+}
+
+.iser-content {
+	display: table;
+	width: 100%;
+}
+
+.iser-item {
+	display: table-cell;
+	width: 20%;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+.iser-item1 {
+	display: table-cell;
+	width: 20%;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+.iser-item1 img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.iser-item1 img:hover{
+	transform: scale(1.1);
+}
+.iser-content2 {
+	width: 100%;
+}
+
+.iser-item2 {
+	width: 50%;
+	float: left;
+	height: 170px;
+	line-height: 170px;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+}
+
+.colol1 {
+	background: #bdbdbd;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol1:hover{
+	background: #2462AE;
+	color: #FFFFFF;
+}
+.colol2 {
+	background: #a8a8a8;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol2:hover{
+	background: #2462AE;
+	color: #FFFFFF;
+}
+.colol3 {
+	background: #2462AE;
+	color: #bdbdbd;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol3:hover{
+	background: #bdbdbd;
+}
+.colol4 {
+	background: #2462AE;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol4:hover{
+	background: #a8a8a8;
+}
+.colol5 {
+	background: #bdbdbd;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol5:hover{
+	background: #5176ae;
+}
+.colol6 {
+	background: #D7D7D7;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all .6s;
+}
+.colol6:hover{
+	background: #5176ae;
+}
+
+/*商务合作*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-bus-box {
+		padding: 10px 0 80px 0;
+	}
+	.index-bus-img {
+		position: relative;
+	}
+	.ibi-pc{
+		display: block !important; 
+	}
+	.ibi-web{
+		display: none !important; 
+	}
+	.ibus-sub-box {
+		position: absolute;
+		width: 30%;
+		right: 25%;
+		bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-bus-box {
+		padding: 10px 0 40px 0;
+	}
+	.ibi-web{
+		display: block !important; 
+	}
+	.ibi-pc{
+		display: none !important; 
+	}
+	.index-bus-img {
+		position: relative;
+	}
+	.ibus-sub-box {
+		position: absolute;
+		width: 90%;
+		right: 5%;
+		bottom: 20px;
+	}
+}
+
+.ibsb-text {
+	line-height: 30px;
+	opacity: .7;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.ibsb-input-box {}
+
+.ibsb-input-box div {
+	height: 45px;
+	line-height: 45px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.ibsb-input-box div input {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	padding-left: 20px;
+	border: 0;
+	color: #000000;
+	opacity: .4;
+	font-size: 16px;
+}
+
+.ibsb-input-box div span {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.ibsb-btn {
+	width: 45%;
+	float: left;
+	background: #2462AE;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 16px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+
+/*首页其他区域样式*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-other-box {
+		padding: 10px 0 70px 0;
+	}
+	.iob-item {
+		width: 31.33%;
+		margin-right: 2%;
+		float: left;
+		background: #f2f2f2;
+	}
+	.iob-item2 {
+		width: 31.33%;
+		margin: 0 1%;
+		float: left;
+		background: #f2f2f2;
+	}
+	.iob-item3 {
+		width: 31.33%;
+		margin-left: 2%;
+		float: left;
+		background: #f2f2f2;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-other-box {
+		padding: 10px 0 40px 0;
+	}
+	.iob-item {
+		width: 100%;
+		background: #f2f2f2;
+		margin-bottom: 15px;
+	}
+	.iob-item2 {
+		width: 100%;
+		background: #f2f2f2;
+		margin-bottom: 15px;
+	}
+	.iob-item3 {
+		width: 100%;
+		background: #f2f2f2;
+		margin-bottom: 15px;
+	}
+}
+
+.iobi-bt {
+	font-size: 20px;
+	color: #565656;
+	font-weight: 340;
+	padding: 35px 35px 20px 35px;
+}
+
+.iobi-bt span {
+	font-size: 16px;
+	color: #565656;
+	opacity: .3;
+	font-weight: 250;
+	margin-left: 5px;
+}
+
+.index-new-list {
+	height: 280px;
+	padding: 20px;
+}
+
+.index-new-list ul {
+	list-style: none;
+	padding: 0;
+}
+
+.index-new-list ul li {
+	font-size: 15px;
+	padding-bottom: 15px;
+	color: #000000;
+	opacity: .8;
+	letter-spacing: .8px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.index-new-list ul li span {
+	color: #fd8919;
+	opacity: .8;
+}
+
+.iobi-content {
+	height: 280px;
+	padding: 30px 40px;
+}
+
+.iobi-text1 {
+	font-size: 14px;
+	color: #bebebe;
+	padding-top: 7px;
+}
+
+.iobi-text2 {
+	font-size: 17px;
+	color: #000000;
+	opacity: .8;
+	padding-top: 7px;
+}
+
+.iobi-content2 {
+	height: 280px;
+	padding: 0 40px 30px 40px;
+}
+
+.iobic2-text1 {
+	text-align: center;
+	padding-top: 15px;
+	color: #000000;
+	opacity: .5;
+}
+
+.iobic2-text2 {
+	padding-top: 80px;
+}
+
+.index-lx1 {
+	text-align: center;
+}
+
+.index-lx1 span:last-of-type {
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	color: #000000;
+	opacity: .5;
+	font-size: 16px;
+}
+
+.index-lx-btn {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	padding: 7px 0;
+	color: #fd8919;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+
+/*首页底部*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.index-footer {
+		background: #D7D7D7;
+		padding: 70px 0 50px 0;
+		text-align: center;
+	}
+	.index-footer div:first-of-type {
+		color: #8D8D8D;
+		font-size: 25px;
+		letter-spacing: 8px;
+		font-weight: 340;
+		padding-bottom: 70px;
+	}
+	.index-footer div:last-of-type {
+		color: #5a5a5a;
+		opacity: .5;
+		font-size: 15px;
+		letter-spacing: 3px;
+		font-weight: 300;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.index-footer {
+		background: #D7D7D7;
+		padding: 50px 0 30px 0;
+		text-align: center;
+	}
+	.index-footer div:first-of-type {
+		color: #8D8D8D;
+		font-size: 20px;
+		letter-spacing: 8px;
+		font-weight: 340;
+		padding-bottom: 30px;
+	}
+	.index-footer div:last-of-type {
+		color: #5a5a5a;
+		opacity: .5;
+		font-size: 13px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+}

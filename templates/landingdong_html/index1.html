@@ -1,0 +1,607 @@
+{% extends "landingdong_html/template.html" %}
+{% block context %}
+    {% load staticfiles %}
+    <!--轮播图 首页 start-->
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            {% for i in i_a %}
+                <div class="swiper-slide">
+                    <img src="{{ i.path }}" class="img-sy"/>
+                </div>
+            {% endfor %}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+    </div>
+    <!--轮播图 首页 end-->
+
+    <!--企业文化 start-->
+    <div class="qy-box">
+        <div class="container">
+            <div class="bt-box">
+                <div class="bt-text1">企业文化</div>
+                <div class="bt-eng">Corporate Culture</div>
+            </div>
+            <div>
+                {% for c in c_c %}
+                    {% if c.title == "定位" %}
+                        <div class="qy-item1">
+                            <div class="nei-box">
+                                <div class="qi-bt">{{ c.title }}</div>
+                                <div class="qi-img">
+                                    <img src="{% static 'assets/ldd/images/index/' %}{{ c.title_logo }}"
+                                         class="img-sy"/>
+                                </div>
+                                <div class="qi-text">
+                                    {{ c.content }}
+                                </div>
+                                <div class="qi-img2">
+                                    <img src="{% static 'assets/ldd/images/index/icon01.png' %}" class="img-sy"/>
+                                </div>
+                            </div>
+                        </div>
+                    {% elif c.title == '愿景' %}
+                        <div class="qy-item2">
+                            <div class="nei-box">
+                                <div class="qi-bt">{{ c.title }}</div>
+                                <div class="qi-img-2">
+                                    <img src="{% static 'assets/ldd/images/index/' %}{{ c.title_logo }}"
+                                         class="img-sy"/>
+                                </div>
+                                <div class="qi-text">
+                                    {{ c.content }}
+                                </div>
+                                <div class="qi-img2">
+                                    <img src="{% static 'assets/ldd/images/index/icon02.png' %}" class="img-sy"/>
+                                </div>
+                            </div>
+                        </div>
+                    {% elif c.title == '价值观' %}
+                        <div class="qy-item3">
+                            <div class="nei-box">
+                                <div class="qi-bt">{{ c.title }}</div>
+                                <div class="qi-img-3">
+                                    <img src="{% static 'assets/ldd/images/index/' %}{{ c.title_logo }}"
+                                         class="img-sy"/>
+                                </div>
+                                <div class="qi-text2">
+                                    {{ c.content }}
+                                </div>
+                                <div class="qi-img2">
+                                    <img src="{% static 'assets/ldd/images/index/icon03.png' %}" class="img-sy"/>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <div class="fl-cl"></div>
+            </div>
+        </div>
+    </div>
+    <!--企业文化 end-->
+
+    <!--关于我们 start-->
+    <div class="index-ab-box">
+        <div class="container">
+
+
+
+            <div class="iab-content">
+                <div class="iab-bt-box">
+                    <div>{{ a_u.title }}</div>
+                    <div>About us</div>
+                </div>
+                <div class="iab-text">
+                    {{ a_u.content }}
+                </div>
+            </div>
+
+            <div class="iab-img">
+                <div class="video-pc">
+                    <video id="videoPlay1" class="video-js vjs-default-skin"
+                           controls preload="none"
+                           style="width: 100%;height: auto;"
+                           poster="{% static 'assets/ldd/images/index/index_ab.jpg' %}"
+                           x-webkit-airplay="true" webkit-playsinline="true">
+                        <source src="{% static 'assets/ldd/video/video.mp4' %}" type='video/mp4'/>
+                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+                        <!-- Tracks need an ending tag thanks to IE9 -->
+                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                        <!-- Tracks need an ending tag thanks to IE9 -->
+                    </video>
+                </div>
+
+                <div class="video-web">
+                    <video id="videoPlay1" class="video-js vjs-default-skin"
+                           controls preload="none"
+                           style="width: 100%;height: auto;"
+                           src="{% static 'assets/ldd/video/video.mp4' %}"
+                           poster="{% static 'assets/ldd/images/index/index_ab.jpg' %}" controls="controls"
+                           x-webkit-airplay="true" webkit-playsinline="true">
+                        <source src="{% static 'assets/ldd/video/video.mp4' %}" type="video/mp4"/>
+                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+                        <!-- Tracks need an ending tag thanks to IE9 -->
+                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                        <!-- Tracks need an ending tag thanks to IE9 -->
+                    </video>
+                </div>
+            </div>
+
+
+{#            <div class="iab-img">#}
+{#                <div class="video-pc">#}
+{#                    <video id="videoPlay1" style="width: 100%;height: auto;"#}
+{#                           src="{% static 'assets/ldd/video/video.mp4' %}"#}
+{#                           poster="{% static 'assets/ldd/images/index/index_ab.jpg' %}" x-webkit-airplay="true"#}
+{#                           webkit-playsinline="true">#}
+{#                        <source src="{% static 'assets/ldd/video/video.mp4' %}" type="video/mp4">#}
+{#                    </video>#}
+{#                </div>#}
+{#                <div class="video-web">#}
+{#                    <video id="videoPlay1" style="width: 100%;height: auto;"#}
+{#                           src="{% static 'assets/ldd/video/video.mp4' %}"#}
+{#                           poster="{% static 'assets/ldd/images/index/index_ab.jpg' %}" controls="controls"#}
+{#                           x-webkit-airplay="true" webkit-playsinline="true">#}
+{#                        <source src="{% static 'assets/ldd/video/video.mp4' %}" type="video/mp4">#}
+{#                    </video>#}
+{#                </div>#}
+{#            </div>#}
+
+            <div class="fl-cl"></div>
+        </div>
+    </div>
+{#    <script>#}
+{#        var video1 = document.getElementById("videoPlay1");#}
+{#        video1.onclick = function () {#}
+{#            if (video1.paused) {#}
+{#                video1.play();#}
+{#            } else {#}
+{#                video1.pause();#}
+{#            }#}
+{#        }#}
+{#    </script>#}
+    <!--关于我们 end-->
+
+    <!--发展历程 start-->
+    <div class="delp-box">
+        <div class="container">
+            <div class="bt-box">
+                <div class="bt-text1">发展历程</div>
+                <div class="bt-eng">Development History</div>
+            </div>
+
+            <div class="time-box">
+
+                {% for d in d_h %}
+                    {% if d.year == '2016' %}
+                        <a onclick="change_text(this);" class="tb-active">{{ d.year }}年</a>
+                    {% else %}
+                        <a onclick="change_text(this);">{{ d.year }}年</a>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+
+            <div class="time-content">
+                <span>介入高端精品保洁业务</span>
+                <div class="dsj1"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function change_text(obj) {
+            $(".time-box a").removeClass('tb-active');
+            $(obj).addClass('tb-active');
+            var content = $(obj).context.innerHTML;
+            if (content == "2009年") {
+                $('.time-content span').html("家电设备清洗行业拓荒者");
+                $('.dsj1').css('left', '20%');
+            } else if (content == "2012年") {
+                $('.time-content span').html("启动嵌入式家电专业清洗");
+                $('.dsj1').css('left', '30%');
+            } else if (content == "2014年") {
+                $('.time-content span').html("启动大型商用设备清洁保养业务");
+                $('.dsj1').css('left', '39%');
+            } else if (content == "2016年") {
+                $('.time-content span').html("介入高端精品保洁业务");
+                $('.dsj1').css('left', '49%');
+            } else if (content == "2017年") {
+                $('.time-content span').html("推出综合清洁业务品牌洗当家");
+                $('.dsj1').css('left', '58.5%');
+            } else if (content == "2018年") {
+                $('.time-content span').html("启动“服务+网络+商品”新模式");
+                $('.dsj1').css('left', '68%');
+            } else if (content == "2019年") {
+                $('.time-content span').html("发布新品牌蓝叮咚");
+                $('.dsj1').css('left', '78%');
+            }
+        }
+    </script>
+    <!--发展历程 end-->
+
+    <!--项目优势 start-->
+    <div class="index-ys-box">
+        <div class="container">
+            <div class="bt-box">
+                <div class="bt-text1">项目优势</div>
+                <div class="bt-eng">Item Advantage</div>
+            </div>
+            <div class="iys-content">
+                <div class="iys-item1">
+                    <div class="iys-bt1">
+                        <div>{{ t_m_a.title }}</div>
+                        <div>Market Analysis</div>
+                    </div>
+                    <div class="iys-text-box">
+                        <div>{{ t_m_a.content }}</div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iys-item2">
+                    <div class="iys-i2-box">
+                        <div class="iys-bt2">
+                            <div>叮咚赋能</div>
+                            <div>Endow with Accredit</div>
+                        </div>
+                        <div>
+                            <img src="{% static 'assets/ldd/images/index/line.png' %}" class="img-sy"/>
+                        </div>
+                        <div class="iys-text-box2">
+                            {% for x in t_x_1 %}
+                                <div><span>{{ x.title }}：</span>{{ x.content }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="iys-item3">
+                    <div class="iys-bt1">
+                        <div>行业痛点</div>
+                        <div>Pain Spot</div>
+                    </div>
+                    <div class="iys-text-box3">
+                        {% for x in t_x_2 %}
+                            <div><span>{{ x.title }}：</span>{{ x.content }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--项目优势 end-->
+
+    <!--合作品牌 start-->
+    <div class="index-hz-box">
+        <div class="container">
+            <div class="bt-box">
+                <div class="bt-text1">合作品牌</div>
+                <div class="bt-eng">Cooperative Brand</div>
+            </div>
+            <div class="ihz-content">
+                {% for p in p_b %}
+                    <div class="ihz-item">
+                        <img src="{% static 'media/images/' %}{{ p.logo }}" class="img-sy"/>
+                    </div>
+                {% endfor %}
+                <div class="fl-cl"></div>
+            </div>
+        </div>
+    </div>
+    <!--合作品牌 end-->
+
+    <!--首页图片 start-->
+    <div>
+        <img src="{% static 'assets/ldd/images/index/img02.jpg' %}" class="img-sy"/>
+    </div>
+    <!--首页图片 end-->
+
+    <!--服务范围 start-->
+    <div class="index-ser-box">
+        <div class="container">
+            <div class="bt-box">
+                <div class="bt-text1">服务范围</div>
+                <div class="bt-eng">Scope of Service</div>
+            </div>
+
+            <!--电脑端样式-->
+            <div class="iser-content iserc-pc">
+                {% for o in s_o_s_1 %}
+                    {% if o.id == 1 %}
+                        <div class="iser-item colol1"><a style="color: #FFFFFF;"
+                                                         href="{{ o.service_url }}">{{ o.service_name }}</a></div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw1.jpg' %}" class="img-sy"/>
+                            <div class="zc1"></div>
+                        </div>
+                    {% elif o.id == 2 %}
+                        <div class="iser-item colol1"><a style="color: #FFFFFF;"
+                                                         href="{{ o.service_url }}">{{ o.service_name }}</a></div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw2.jpg' %}" class="img-sy"/>
+                            <div class="zc2"></div>
+                        </div>
+                    {% elif o.id == 3 %}
+                        <div class="iser-item colol1">
+                            <a style="color: #FFFFFF;" href="{{ o.service_url }}">{{ o.service_name }}</a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="iser-content iserc-pc">
+
+                {% for o in s_o_s_2 %}
+                    {% if o.id  == 4 %}
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw3.jpg' %}" class="img-sy"/>
+                            <div class="zc3"></div>
+                        </div>
+                        <div class="iser-item colol4">
+                            <a style="color: #FFFFFF;" href="{{ o.service_url }}">{{ o.service_name }}</a>
+                        </div>
+                    {% elif o.id == 5 %}
+                        <div class="iser-item colol5">{{ o.service_name }}</div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw4.jpg' %}" class="img-sy"/>
+                            <div class="zc4"></div>
+                        </div>
+                    {% elif o.id == 6 %}
+                        <div class="iser-item colol6">项目案例</div>
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+            <!--电脑端样式-->
+
+
+            <!--手机端样式-->
+            {% for o in s_o_s %}
+                {% if o.service_name == '电器清洁' %}
+                    <div class="iser-content iserc-web">
+                        <div class="iser-item colol1">{{ o.service_name }}</div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw1.jpg' %}" class="img-sy"/>
+                        </div>
+                    </div>
+                {% elif o.service_name == '空气治理' %}
+                    <div class="iser-content iserc-web">
+                        <div class="iser-item colol2">{{ o.service_name }}</div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw2.jpg' %}" class="img-sy"/>
+                        </div>
+                    </div>
+                {% elif o.service_name == '商用设备' %}
+                    <div class="iser-content iserc-web">
+                        <div class="iser-item colol3">{{ o.service_name }}</div>
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw3.jpg' %}" class="img-sy"/>
+                        </div>
+                    </div>
+                {% elif o.service_name == '项目案例' %}
+                    <div class="iser-content iserc-web">
+                        <div class="iser-item">
+                            <img src="{% static 'assets/ldd/images/index/index_fw4.jpg' %}" class="img-sy"/>
+                        </div>
+                        <div class="iser-item colol6">{{ o.service_name }}</div>
+                    </div>
+                {% elif o.service_name == '家政服务' %}
+                    <div class="iser-content2 iserc-web">
+                        <div class="iser-item2 colol4">{{ o.service_name }}</div>
+                    </div>
+                {% elif o.service_name == '安装售后' %}
+                    <div class="iser-content2 iserc-web">
+                        <div class="iser-item2 colol4">{{ o.service_name }}</div>
+                        <div class="fl-cl"></div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <!--手机端样式-->
+        </div>
+    </div>
+    <!--服务范围 end-->
+
+    <!--商务合作 start-->
+    <form action="{% url 'index:dusin_coop' %}" id="business_form" method="post">
+        {% csrf_token %}
+        <div class="index-bus-box">
+            <div class="bt-box">
+                <div class="bt-text1">商务合作</div>
+                <div class="bt-eng">Business Cooperation</div>
+            </div>
+            <div class="index-bus-img">
+                <img src="{% static 'assets/ldd/images/index/img03.jpg' %}" class="img-sy ibi-pc"/>
+                <img src="{% static 'assets/ldd/images/index/img04.jpg' %}" class="img-sy ibi-web"/>
+                <div class="ibus-sub-box">
+                    <input type="hidden" name="_token" value="Z0uNCav3FxbUZ5sEf1ucrJSqiDBLxH0ZB5XK93i7">
+                    <div class="ibsb-text">
+                        如果你和我们一样，热爱生活，热爱服务业；在到家服务领域中辛勤耕耘，在传统经营转型中寻觅方向，在拥抱未来变化中期待能量，诚信正直且脚踏实地做事，就让我们共同携手，走向美好未来！
+                    </div>
+                    <div class="ibsb-input-box">
+                        <div>
+                            <input name="name" placeholder="您的名字"/>
+                        </div>
+                        <div>
+                            <input name="phone" placeholder="联系方式"/>
+                        </div>
+                        <div>
+                            <input name="address" placeholder="所在区域"/>
+                            <span id="select_address">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         t="1550121472935" class="icon" style="" viewBox="0 0 1035 1024" version="1.1"
+                                         p-id="2797" width="15.859375" height="15">
+                                        <defs>
+                                            <style type="text/css"/>
+                                        </defs>
+                                        <path d="M89.381404 425.533207l409.988615-409.988615 408.045541 409.988615zM907.41556 594.580645l-409.988615 409.988615-408.045541-409.988615z"
+                                              p-id="2798" fill="#dbdbdb"/>
+                                    </svg>
+                                </span>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit_button" class="ibsb-btn">
+                        提交
+                    </button>
+                    <div class="fl-cl"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--商务合作 end-->
+
+    <!--其他区域 start-->
+    <div class="index-other-box">
+        <div class="container">
+            <div class="iob-item">
+                <div class="iobi-bt">
+                    新闻<span>News</span>
+                </div>
+                <div class="iobi-img">
+                    <img src="{% static 'assets/ldd/images/index/new01.jpg' %}" class="img-sy"/>
+                </div>
+                <div class="index-new-list">
+                    <ul>
+                        <li>
+                            <a href="{% static 'news/14' %}">
+                                <span>[企业新闻]</span>错过了淘宝，错过了房地产投资，今天绝不能再错过它！
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% static 'news/15' %}">
+                                <span>[企业新闻]</span>健康清洁环保大蓝海 蓝叮咚顺势起航
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% static 'news/3' %}">
+                                <span>[企业新闻]</span>别等了！携手蓝叮咚轻松创业，收入井喷式增长不是梦！
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% static 'news/8' %}">
+                                <span>[企业新闻]</span>家电为什么一定要请专业人士清洗？
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iob-item2">
+                <div class="iobi-bt">
+                    办公<span>Office</span>
+                </div>
+                <div class="iobi-img iobi-map">
+                    <img src="{% static 'assets/ldd/images/index/bg01.jpg' %}" class="img-sy"/>
+                </div>
+                <div class="iobi-content">
+                    <div>
+                            <span>
+                                <svg viewBox="0 0 1024 1024" version="1.1" p-id="2923" width="88" height="88">
+                                    <path d="M511.999699 0C279.130052 0 90.35264 189.861647 90.35264 424.176941c0 117.097412 47.224471 223.111529 123.482353 299.91153L511.999699 1024l298.164706-299.911529A424.116706 424.116706 0 0 0 933.646758 424.176941C933.646758 189.861647 744.869346 0 511.999699 0z m0 612.592941a187.934118 187.934118 0 0 1-187.452235-188.53647A187.873882 187.873882 0 0 1 511.999699 235.640471a187.934118 187.934118 0 0 1 187.452235 188.53647A187.873882 187.873882 0 0 1 511.999699 612.653176z"
+                                          p-id="2924" fill="#2462AE"/>
+                                </svg>
+                            </span>
+                    </div>
+                    {% for i in f %}
+                        <div class="map-cl{{ i.id }}">
+                            <div class="iobi-text1">{{ i.firm_name }}</div>
+                            <div class="iobi-text2">{{ i.firm_site }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="iob-item3">
+                <div class="iobi-bt">
+                    联系<span>Contact Us</span>
+                </div>
+                <div class="iobi-img">
+                    <img src="{% static 'assets/ldd/images/index/' %}{{ c_u.winxi }}" class="img-sy"/>
+                </div>
+                <div class="iobi-content2">
+                    <div class="iobic2-text1">敬请关注官方微信公众号</div>
+                    <div class="iobic2-text2">
+                        <div class="index-lx1">
+                                        <span>
+                                            <svg viewBox="0 0 1024 1024" version="1.1" p-id="4346" width="58"
+                                                 height="58">
+                                                <path d="M512.894881 209.974245c-161.590282 0-292.574498 130.996496-292.574498 292.575522 0 79.141478 31.454386 150.822031 82.425268 203.514113 23.189142 20.87033 48.467875 39.283702 76.295664 53.749158 15.129582 7.828292 31.821753 15.749706 49.317219 22.912849 26.770713 8.012488 55.149041 12.421914 84.536348 12.421914 161.590282 0 292.575522-131.006729 292.575522-292.598035C805.470403 340.970742 674.486186 209.974245 512.894881 209.974245zM512.894881 751.250012c-137.321552 0-248.699222-111.354134-248.699222-248.699222 0-137.357368 111.37767-248.677732 248.699222-248.677732 137.368624 0 248.701269 111.320365 248.701269 248.677732C761.59615 639.894855 650.264529 751.250012 512.894881 751.250012z"
+                                                      p-id="4347" fill="#bebebe"/>
+                                                <path d="M353.463776 561.533137c165.769464 139.986241 318.887794 0 318.887794 0s0 144.807037-159.455665 144.807037C353.463776 706.340173 353.463776 561.533137 353.463776 561.533137z"
+                                                      p-id="4348" fill="#bebebe"/>
+                                                <path d="M512.894881 119.145587c-180.003654 0-331.008856 124.028804-372.268562 291.324018 0 0-103.272062 16.33606-98.702999 120.205733 4.569062 103.84716 113.489774 110.183472 113.489774 110.183472 1.307785 3.329838 24.198122-3.237741 32.419364-4.6366-16.96744-41.190121-26.40437-86.329181-26.40437-133.671419 0-194.112999 157.366074-351.467817 351.46577-351.467817 194.124256 0 351.445304 157.354817 351.445304 351.467817 0 154.884556-100.149954 286.307771-239.21829 333.098447-8.977465 3.053546-18.413372-1.00898-18.413372-1.00898s-23.556509-4.409426-53.105498 3.948939c-14.556531 4.155646-20.801768 19.677155-19.928888 33.267685 1.079588 16.186657 7.230682 27.826765 24.15412 30.399357 21.789259 3.421936 52.760644 7.30129 64.470337-16.003486 3.168156-6.337335 6.613628-18.069541 14.052041-20.594037 107.472733-36.528961 193.503109-119.43723 234.278791-224.845954 0 0 108.324124-12.673647 111.51684-112.547309 3.191692-99.839893-96.890724-117.53081-96.890724-117.53081C844.091002 243.312538 692.992679 119.145587 512.894881 119.145587z"
+                                                      p-id="4349" fill="#bebebe"/>
+                                            </svg>
+                                        </span>
+                            <span>联系客服</span>
+                        </div>
+                        <div class="index-lx-btn">
+                            {{ c_u.phone }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--其他区域 end-->
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id="select_address_dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">选择你所在的区域</h4>
+                </div>
+                <div class="modal-body">
+                    <div data-toggle="distpicker">
+                        <select id="province"></select>
+                        <select id="city"></select>
+                        <select id="district"></select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="selected_button">选好了</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script>
+        $(window).load(function () {
+            $(".mobile-inner-header-icon").click(function () {
+                $(this).toggleClass("mobile-inner-header-icon-click mobile-inner-header-icon-out");
+                $(".mobile-inner-nav").slideToggle(250);
+
+            });
+
+            $(".mobile-inner-nav a").each(function (index) {
+                $(this).css({
+                    'animation-delay': (index / 10) + 's'
+                });
+            });
+        });
+    </script>
+    <script src="{% static 'vendor/address/js/distpicker.data.js' %}"></script>
+    <script src="{% static 'vendor/address/js/distpicker.js' %}"></script>
+    <script src="{% static 'js/welcome.js?r=1560913854' %}"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 4000,
+            loop: true,
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#index').css('color', '#5c9ce2');
+        });
+    </script>
+    <script>
+        $('.map-cl1').mouseover(function () {
+            $('.iobi-map img').attr('src', '{% static "assets/ldd/images/index/bg01.jpg" %}');
+        })
+        $('.map-cl2').mouseover(function () {
+            $('.iobi-map img').attr('src', '{% static "assets/ldd/images/index/bg02.jpg" %}');
+        })
+    </script>
+{% endblock context %}

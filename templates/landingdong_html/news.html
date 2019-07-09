@@ -1,0 +1,96 @@
+{% extends "landingdong_html/template.html" %}
+    {% block context %}
+        {% load staticfiles %}
+
+        <!--轮播图 商学院 start-->
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{% static 'media/images/d61db6f5b7e59830d6a3bf51f791b9bc.jpg' %}" class="img-sy"/>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+        </script>
+        <!--轮播图 商学院 end-->
+
+        <!--新闻 start-->
+        <div class="news-box">
+            <div class="container">
+                <div class="bt-box">
+                    <div class="bt-text1">新闻</div>
+                    <div class="bt-eng">News</div>
+                </div>
+                <div class="news-content">
+                    <div class="news-item">
+                        <div>
+                            <img src="{% static 'media/images/853f01849e6f1258061ab65928478503.jpg' %}"
+                                 class="img-sy"/>
+                        </div>
+                        <div class="ni-content">
+                            <div class="ni-bt">错过了淘宝，错过了房地产投资，今天绝不能再错过它！</div>
+                            <div class="ni-time">2019年05月27日</div>
+                            <div class="ni-text">
+                                优质到家服务，就选蓝叮咚！
+                                <a href="{% static 'news/14' %}">点击查看</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div>
+                            <img src="{% static 'media/images/ce4dc683e4133fa333955661502da2a5.jpg' %}"
+                                 class="img-sy"/>
+                        </div>
+                        <div class="ni-content">
+                            <div class="ni-bt">健康清洁环保大蓝海 蓝叮咚顺势起航</div>
+                            <div class="ni-time">2019年06月04日</div>
+                            <div class="ni-text">
+                                6月3日下午14:00，蓝叮咚在青岛市李沧区九水东路国际创新区一号楼多功能厅，举行了一场以“顺势转型，荣耀未...
+                                <a href="{% static 'news/15' %}">点击查看</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div>
+                            <img src="{% static 'media/images/e05070f2c2d262db29dadb3042d94444.jpg' %}"
+                                 class="img-sy"/>
+                        </div>
+                        <div class="ni-content">
+                            <div class="ni-bt">别等了！携手蓝叮咚轻松创业，收入井喷式增长不是梦！</div>
+                            <div class="ni-time">2019年02月17日</div>
+                            <div class="ni-text">
+                                优质到家服务，就找蓝叮咚，期待与您合作！
+                                <a href="{% static 'news/3' %}">点击查看</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div>
+                            <img src="{% static 'media/images/9a6cd11ae23cb19c5e7dde2ab93cfc94.jpg' %}"
+                                 class="img-sy"/>
+                        </div>
+                        <div class="ni-content">
+                            <div class="ni-bt">家电为什么一定要请专业人士清洗？</div>
+                            <div class="ni-time">2019年02月17日</div>
+                            <div class="ni-text">
+                                优质到家服务，就找蓝叮咚，期待与您合作！
+                                <a href="{% static '' %}">点击查看</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-cl">
+                        <div class="center-block" style="text-align: center">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新闻 end-->
+    {% endblock context %}

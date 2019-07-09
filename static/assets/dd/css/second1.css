@@ -1,0 +1,256 @@
+/*家电家政板块*/
+.gg-text{
+	color: #333333;
+	font-size: 28px;
+	text-align: center;
+	font-weight: 250;
+	padding: 70px 0;;
+}
+.ser-second1-box{
+	padding-bottom: 70px;
+}
+.ssb1-text{
+	text-align: center;
+}
+.ssb1-text div:first-of-type{
+	text-align: center;
+}
+.ssb1-text div:last-of-type{
+	color: #1b3128;
+	font-size: 26px;
+	font-weight: 320;
+	padding-bottom: 30px;
+}
+.sd1-img1{
+	margin-top: 14px;
+	padding: 0 7px;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+.sd1-img1:hover{
+	transform:translate(0,-10px);  
+ 　	-webkit-transform:translate(0,-10px);    
+　　-moz-transform:translate(0,-10px);    
+　　-o-transform:translate(0,-10px);    
+　　-ms-transform:translate(0,-10px);
+	box-shadow:0px 5px 20px #ccc;
+}
+/*项目模式*/
+.pd-model-box{
+	background: #cbe3ff;
+	padding: 50px 0 120px 0;
+}
+.bt-second1 {
+	color: #333333;
+	font-size: 35px;
+	text-align: center;
+	font-weight: 250;
+	padding: 50px 0 70px 0;
+}
+/*合作优势*//
+.sd-hzg-content {
+	display: table;
+	width: 100%;
+}
+
+.sd-hzg-item {
+	display: table-cell;
+	width: 20%;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+.sd-hzg-item1 {
+	display: table-cell;
+	width: 20%;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+.sd-sb{
+	position: absolute;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.sd-sb:hover{
+	opacity: 1;
+}
+.sd-sb span{
+	display: inline-block;
+	margin-top: 40%;
+}
+/*.sd-hzg-item1 img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.sd-hzg-item1 img:hover{
+	transform: scale(1.1);
+}*/
+.sd-hzg-content2 {
+	width: 100%;
+}
+
+.sd-hzg-item2 {
+	width: 50%;
+	float: left;
+	height: 170px;
+	line-height: 170px;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+}
+.color1 {
+	background: #434343;
+	color: #FFFFFF;
+}
+.color2 {
+	background: #FFFFFF;
+	color: #333333;
+}
+/*资质展示*/
+.sd-zz-box{
+	margin-bottom: 70px;
+}
+
+/*药剂管理页面*/
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.yjzl-box{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	}
+	.yj-bt{
+	padding: 60px 0 40px 0;
+	margin: 0 10%;
+	font-size: 35px;
+	font-weight: bold;
+	color: #333333;
+	border-bottom: 1px solid #666666;
+	}
+	.yj-text{
+	font-size: 28px;
+	font-weight: 280;
+	padding: 40px 0;
+	color: #333333;
+}
+.yj-icon{
+	padding: 60px 0 20px 0;
+}
+.yj-text2{
+	font-size: 26px;
+	font-weight: 280;
+	padding: 10px 0 10px 0;
+	color: #333333;
+}
+.yj-text3{
+	font-size: 26px;
+	font-weight: 280;
+	padding: 0px 0 10px 0;
+	color: #333333;
+}
+.yj-text4{
+	font-size: 26px;
+	padding: 0px 0 30px 0;
+	color: #333333;
+	font-weight: bold;
+}
+.yj-cl4{
+	padding: 20px 10px;
+}
+.yj-cl4 div:first-of-type{
+	width: 35%;
+	margin: 0 auto;
+}
+.yj-cl4 div:last-of-type{
+	margin-top: 30px;
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 280;
+	border: 1px solid #333333;
+}
+}
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.yjzl-box{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	}
+	.yj-bt{
+	padding: 40px 0 30px 0;
+	margin: 0 10%;
+	font-size: 25px;
+	font-weight: bold;
+	color: #333333;
+	border-bottom: 1px solid #666666;
+	}
+	.yj-text{
+	font-size: 22px;
+	font-weight: 280;
+	padding: 30px 0;
+	color: #333333;
+}
+.yj-icon{
+	padding: 40px 0 10px 0;
+}
+.yj-text2{
+	font-size: 22px;
+	font-weight: 280;
+	padding: 10px 0 10px 0;
+	color: #333333;
+}
+.yj-text3{
+	font-size: 22px;
+	font-weight: 280;
+	padding: 0px 0 10px 0;
+	color: #333333;
+}
+.yj-text4{
+	font-size: 22px;
+	padding: 0px 0 30px 0;
+	color: #333333;
+	font-weight: bold;
+}
+.yj-cl4{
+	/*padding: 20px 10px;*/
+}
+.yj-cl4 div:first-of-type{
+	width: 70%;
+	margin: 0 auto;
+}
+.yj-cl4 div:last-of-type{
+	margin-top: 30px;
+	padding: 20px 0;
+	font-size: 20px;
+	font-weight: 280;
+	border: 1px solid #333333;
+}
+}
+.pd-model-box1{
+	background: #cbe3ff;
+	padding: 70px 0;
+}
+.pdmc2 div:nth-child(2){
+	font-size: 26px;
+	color: #333333;	
+	padding: 40px 0 10px 0;
+	text-align: center;
+	font-weight: 280;
+}
+.pdmc2 div:last-of-type{
+	font-size: 26px;
+	color: #333333;	
+	text-align: center;
+	font-weight: 280;
+}
+

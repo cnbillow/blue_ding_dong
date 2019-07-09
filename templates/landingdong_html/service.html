@@ -1,0 +1,594 @@
+{% extends "landingdong_html/template.html" %}
+{% block context %}
+{% load staticfiles %}
+<!--轮播图 服务范围 start-->
+<div class="swiper-container swiper-container-horizontal">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="{% static 'media/images/3eda29a138d587b002395fddb271a70a.jpg' %}" class="img-sy"/>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+</div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+<!--轮播图 服务范围 end-->
+
+<!--电器清洁 start-->
+<div class="ser-wash-box">
+    <div class="container">
+        <div class="bt-box">
+            <div class="bt-text1">居家服务</div>
+            <div class="bt-eng">Electrical Cleaning</div>
+        </div>
+        <div class="swb-content">
+            <div class="swbc-left">居家服务</div>
+            <div class="swbc-right">
+                <a href="{% url 'second1_1:second1' %}">
+                    <img src="{% static  'assets/ldd/images/service/img01.jpg' %}" class="img-sy swb-img"/>
+                    <div class="swbc-icon">
+                        <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--<div class="swb-content2">
+            <div class="swbc2-item">
+                <div class="swbc2i-bt">必要性</div>
+                <div class="swbc2i-ul">
+                    <ul>
+                        <li>1.杀菌消毒护健康</li>
+                        <li>2.清除残留尘污</li>
+                        <li>3.延长家电寿命</li>
+                        <li>4.更加节能环保</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swbc2-item2">
+                <div class="swbc2i-bt">大市场</div>
+                <div class="swbc2i-ul">
+                    <ul>
+                        <li>数十万亿存量家电市场，</li>
+                        <li>定期清洁的需求意识越</li>
+                        <li>来越强，迫切需要专业</li>
+                        <li>服务。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swbc2-item3">
+                <div class="swbc2i-bt">品类多</div>
+                <div class="swbc2i-ul">
+                    <ul>
+                        <li>家用空调，抽油烟机，</li>
+                        <li>电热水器，洗衣机，</li>
+                        <li>集成灶，嵌入高端电器等</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swbc2-item">
+                <div class="swbc2i-bt">行业短板</div>
+                <div class="swbc2i-ul">
+                    <ul>
+                        <li>无标准，无规范，质量</li>
+                        <li>无保障，游击队施工，</li>
+                        <li>用户体验不佳。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swbc2-item4">
+                <div class="swbc2i-bt">综合优势</div>
+                <div class="swbc2i-ul">
+                    <ul>
+                        <li>自主研发专业的清洗设备，国际一流蓝天使认证的清洁药剂，系统的</li>
+                        <li>理论与实践培训，可靠的获单支持；信息系统管理用户数据，实现一</li>
+                        <li>次优质服务，成就终身用户。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+        <div class="sab-content1">
+            <div class="sabc-item1">
+                <div class="nei-box3">
+                    <div class="sabci-bt">项目定位</div>
+                    <div class="sabci-text">创综合到家服务第一品牌，优质到家服务提供商</div>
+                </div>
+            </div>
+            <div class="sabc-item2">
+                <div class="nei-box3">
+                    <div class="sabci-bt">经营模式</div>
+                    <div class="sabci-text">“精品到家服务+关联商品销售+信息网络平台”新模式</div>
+                </div>
+            </div>
+            <div class="sabc-item1">
+                <div class="nei-box3">
+                    <div class="sabci-bt">用户价值</div>
+                    <div class="sabci-text">让居家服务专业化、规范化、职业化、智能化、品牌化。</div>
+                </div>
+            </div>
+            <div class="sabc-item2">
+                <div class="nei-box3">
+                    <div class="sabci-bt">合作优势</div>
+                    <div class="sabci-text">商学院培训/专业设备/技术方案/信息系统管理/清洁行业从业资格证/运营管理/订单派送/37项行业资质/218项标准规范</div>
+                </div>
+            </div>
+            <div class="fl-cl"></div>
+        </div>
+    </div>
+</div>
+<!--电器清洁 end-->
+
+<!--空气治理 start-->
+<div class="ser-air-box">
+    <div class="bt-box">
+        <div class="bt-text1">空气治理</div>
+        <div class="bt-eng">Air Control</div>
+    </div>
+
+</div>-->
+<div class="container">
+    <div class="swb-content">
+        <div class="swbc-left">空气治理</div>
+        <div class="swbc-right">
+            <a href="{% url 'second3_1:second3' %}">
+                <img src="{% static 'assets/ldd/images/service/img02.jpg' %}" class="img-sy swb-img"/>
+                <div class="swbc-icon">
+                    <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="sab-content1">
+        <div class="sabc-item1">
+            <div class="nei-box3">
+                <div class="sabci-bt">解决方案</div>
+                <div class="sabci-text">精准检测，在线监控，全程治理，健康增益</div>
+            </div>
+        </div>
+        <div class="sabc-item2">
+            <div class="nei-box3">
+                <div class="sabci-bt">先进技术</div>
+                <div class="sabci-text">天然萃取进口原液，无需光照催化治理，清洁空气健康环境</div>
+            </div>
+        </div>
+        <div class="sabc-item1">
+            <div class="nei-box3">
+                <div class="sabci-bt">用户价值</div>
+                <div class="sabci-text">健康治理 远离甲醛 畅享健康空气</div>
+            </div>
+        </div>
+        <div class="sabc-item2">
+            <div class="nei-box3">
+                <div class="sabci-bt">合作优势</div>
+                <div class="sabci-text">权威检测 进口药剂 全程治理 负离子健康增益</div>
+            </div>
+        </div>
+        <div class="fl-cl"></div>
+    </div>
+</div>
+</div>
+<!--空气治理 end-->
+
+<!--商用设备 start-->
+<div class="ser-sy-box">
+    <div class="bt-box">
+        <div class="bt-text1">商用服务</div>
+        <div class="bt-eng">Commercial Equipment</div>
+    </div>
+
+    <div class="container">
+        <div class="swb-content">
+            <div class="swbc-left">商用服务</div>
+            <div class="swbc-right">
+                <a href="{% url  'second2_1:second2' %}">
+                    <img src="{% static 'assets/ldd/images/service/img03.jpg' %}" class="img-sy swb-img"/>
+                    <div class="swbc-icon">
+                        <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sab-content1">
+            <div class="sabc-item1">
+                <div class="nei-box3">
+                    <div class="sabci-bt">项目定位</div>
+                    <div class="sabci-text">商业设备系统清洁维保一站式贴心服务管家</div>
+                </div>
+            </div>
+            <div class="sabc-item2">
+                <div class="nei-box3">
+                    <div class="sabci-bt">技术支持</div>
+                    <div class="sabci-text">从图纸审查到清洁后检测报告全流程技术力量</div>
+                </div>
+            </div>
+            <div class="sabc-item1">
+                <div class="nei-box3">
+                    <div class="sabci-bt">用户价值</div>
+                    <div class="sabci-text">为配置风系统水系统中央空调楼宇、大型烟机方提供专业/高效/优质/放心的维保清洁服务</div>
+                </div>
+            </div>
+            <div class="sabc-item2">
+                <div class="nei-box3">
+                    <div class="sabci-bt">合作优势</div>
+                    <div class="sabci-text">技术方案 招投标方案 清洗设备 关键药剂 37项行业资质 专业施工 现场管理 检测报告</div>
+                </div>
+            </div>
+            <div class="fl-cl"></div>
+        </div>
+    </div>
+</div>
+<!--商用设备 end-->
+
+<!--项目案例 start-->
+<div class="ser-pro-al">
+    <div class="container">
+        <div class="bt-box">
+            <div class="bt-text1">项目案例</div>
+            <div class="bt-eng">Project Case</div>
+        </div>
+        <!--轮播图 项目案例 start-->
+        <div class="swiper-container swiper-container-horizontal swiper-container-al">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{% static 'images/59768a76583f620f4d41e35126c923a2.jpg' %}" class="img-sy"/>
+                </div>
+            </div>
+            <div style="height: 70px;"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination-al swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container-al', {
+                pagination: '.swiper-pagination-al',
+                paginationClickable: true
+            });
+        </script>
+        <!--轮播图 项目案例 end-->
+    </div>
+</div>
+<!--项目案例 end-->
+
+<style>
+@media screen and (min-width: 600px) {
+    /*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+    .dfc-content1 {
+        width: 100%;
+        display: table;
+    }
+
+    .dfcc-item1 {
+        display: table-cell;
+        width: 55%;
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 21px;
+        font-weight: 320;
+        color: #8d8d8d;
+    }
+
+    .dfcc-item2 {
+        display: table-cell;
+        width: 28%;
+        text-align: left;
+    }
+
+    .dfcc-item2 div:first-of-type span:last-of-type {
+        position: relative;
+        display: inline-block;
+        top: -10px;
+        font-size: 18px;
+        color: #000000;
+        opacity: .5;
+    }
+
+    .dfcc-item2 div:last-of-type {
+        color: #ff9a3d;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .dfcc-item3 {
+        display: table-cell;
+        width: 17%;
+        text-align: left;
+    }
+
+    .ewm-img {
+        padding: 40px 40px 0 0;
+        margin-right: 40px;
+    }
+
+    .ewm-text {
+        font-size: 16px;
+        color: #000000;
+        opacity: .5;
+        padding: 15px 0;
+    }
+
+    .dfc-content2 {
+        padding: 20px;
+        color: #5a5a5a;
+        opacity: .4;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 3px;
+        font-weight: 320;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .dfc-content1 {
+        width: 100%;
+    }
+
+    .dfcc-item1 {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 18px;
+        font-weight: 320;
+        color: #8d8d8d;
+        padding: 20px 0;
+    }
+
+    .dfcc-item2 {
+        width: 50%;
+        float: left;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .dfcc-item2 div:first-of-type span:last-of-type {
+        position: relative;
+        display: inline-block;
+        top: -10px;
+        font-size: 16px;
+        color: #000000;
+        opacity: .5;
+    }
+
+    .dfcc-item2 div:last-of-type {
+        color: #ff9a3d;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .dfcc-item3 {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+    .ewm-img {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .ewm-text {
+        font-size: 15px;
+        color: #000000;
+        opacity: .5;
+        padding: 15px 0;
+    }
+
+    .dfc-content2 {
+        padding: 20px;
+        color: #5a5a5a;
+        opacity: .4;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 320;
+    }
+}
+
+.dd-footer {
+    background: #d7d7d7;
+}
+</style>
+{#        <!--轮播图 服务范围 start-->#}
+{#        <div class="swiper-container swiper-container-horizontal">#}
+{#            <div class="swiper-wrapper">#}
+{#                <div class="swiper-slide">#}
+{#                    <img src="{% static 'media/images/3eda29a138d587b002395fddb271a70a.jpg' %}" class="img-sy"/>#}
+{#                </div>#}
+{#            </div>#}
+{#            <!-- Add Pagination -->#}
+{#            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>#}
+{#        </div>#}
+{#        <script>#}
+{#            var swiper = new Swiper('.swiper-container', {#}
+{#                pagination: '.swiper-pagination',#}
+{#                paginationClickable: true#}
+{#            });#}
+{#        </script>#}
+{#        <!--轮播图 服务范围 end-->#}
+{##}
+{#        <!--电器清洁 start-->#}
+{#        <div class="ser-wash-box">#}
+{#            <div class="container">#}
+{#                <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                    <div class="bt-text1">居家服务</div>#}
+{#                    <div class="bt-eng">Electrical Cleaning</div>#}
+{#                </div>#}
+{#                <div class="swb-content">#}
+{#                    <div class="swbc-left">居家服务</div>#}
+{#                    <div class="swbc-right">#}
+{#                        <a href="{% url 'second1_1:second1' %}">#}
+{#                            <img src="{% static 'assets/ldd/images/service/img01.jpg' %}" class="img-sy swb-img"/>#}
+{#                            <div class="swbc-icon">#}
+{#                                <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="sab-content1">#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">项目定位</div>#}
+{#                            <div class="sabci-text">创综合到家服务第一品牌，优质到家服务提供商</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">经营模式</div>#}
+{#                            <div class="sabci-text">“精品到家服务+关联商品销售+信息网络平台”新模式</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">用户价值</div>#}
+{#                            <div class="sabci-text">让居家服务专业化、规范化、职业化、智能化、品牌化。</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">合作优势</div>#}
+{#                            <div class="sabci-text">商学院培训/专业设备/技术方案/信息系统管理/清洁行业从业资格证/运营管理/订单派送/37项行业资质/218项标准规范</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="fl-cl"></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!--电器清洁 end-->#}
+{##}
+{#        <!--空气治理 start-->#}
+{#        <div class="ser-air-box">#}
+{#            <div class="bt-text1">空气治理</div>#}
+{#            <div class="bt-eng">Air Control</div>#}
+{#            <div class="container">#}
+{#                <div class="swb-content">#}
+{#                    <div class="swbc-left">空气治理</div>#}
+{#                    <div class="swbc-right">#}
+{#                        <a href="{% url 'second3_1:second3' %}">#}
+{#                            <img src="{% static 'assets/ldd/images/service/img02.jpg' %}" class="img-sy swb-img"/>#}
+{#                            <div class="swbc-icon">#}
+{#                                <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="sab-content1">#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">解决方案</div>#}
+{#                            <div class="sabci-text">精准检测，在线监控，全程治理，健康增益</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">先进技术</div>#}
+{#                            <div class="sabci-text">天然萃取进口原液，无需光照催化治理，清洁空气健康环境</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">用户价值</div>#}
+{#                            <div class="sabci-text">健康治理 远离甲醛 畅享健康空气</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">合作优势</div>#}
+{#                            <div class="sabci-text">权威检测 进口药剂 全程治理 负离子健康增益</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="fl-cl"></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!--空气治理 end-->#}
+{##}
+{#        <!--商用设备 start-->#}
+{#        <div class="ser-sy-box">#}
+{#            <div class="bt-box">#}
+{#                <div class="bt-text1">商用服务</div>#}
+{#                <div class="bt-eng">Commercial Equipment</div>#}
+{#            </div>#}
+{#            <!--<div>#}
+{#                <a href="{% url 'second2_1:second2' %}">#}
+{#                <img src="{% static 'assets/ldd/images/service/img03.jpg' %}" class="img-sy" />#}
+{#                </a>#}
+{#            </div>-->#}
+{#            <div class="container">#}
+{#                <div class="swb-content">#}
+{#                    <div class="swbc-left">商用服务</div>#}
+{#                    <div class="swbc-right">#}
+{#                        <a href="{% url 'second2_1:second2' %}">#}
+{#                            <img src="{% static 'assets/ldd/images/service/img03.jpg' %}" class="img-sy swb-img"/>#}
+{#                            <div class="swbc-icon">#}
+{#                                <div><img src="{% static 'assets/ldd/images/service/more.png' %}" class="img-sy"/>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="sab-content1">#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">项目定位</div>#}
+{#                            <div class="sabci-text">商业设备系统清洁维保一站式贴心服务管家</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">技术支持</div>#}
+{#                            <div class="sabci-text">从图纸审查到清洁后检测报告全流程技术力量</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item1">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">用户价值</div>#}
+{#                            <div class="sabci-text">为配置风系统水系统中央空调楼宇、大型烟机方提供专业/高效/优质/放心的维保清洁服务</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="sabc-item2">#}
+{#                        <div class="bt-box" style="padding-top: 50px; padding-left: 40px; padding-right: 30px;">#}
+{#                            <div class="sabci-bt">合作优势</div>#}
+{#                            <div class="sabci-text">技术方案 招投标方案 清洗设备 关键药剂 37项行业资质 专业施工 现场管理 检测报告</div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="fl-cl"></div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!--商用设备 end-->#}
+{##}
+{#        <!--项目案例 start-->#}
+{#        <div class="ser-pro-al">#}
+{#            <div class="container">#}
+{#                <div class="bt-box">#}
+{#                    <div class="bt-text1">项目案例</div>#}
+{#                    <div class="bt-eng">Project Case</div>#}
+{#                </div>#}
+{#                <!--轮播图 项目案例 start-->#}
+{#                <div class="swiper-container swiper-container-horizontal swiper-container-al">#}
+{#                    <div class="swiper-wrapper">#}
+{#                        <div class="swiper-slide">#}
+{#                            <img src="{% static 'media/images/b94d8d1467bab6903034815b5588d983.jpg' %}"#}
+{#                                 class="img-sy"/>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div style="height: 70px;"></div>#}
+{#                    <!-- Add Pagination -->#}
+{#                    <div class="swiper-pagination-al swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>#}
+{#                </div>#}
+{#                <script>#}
+{#                    var swiper = new Swiper('.swiper-container-al', {#}
+{#                        pagination: '.swiper-pagination-al',#}
+{#                        paginationClickable: true#}
+{#                    });#}
+{#                </script>#}
+{#                <!--轮播图 项目案例 end-->#}
+{#            </div>#}
+{#        </div>#}
+{#        <!--项目案例 end-->#}
+{% endblock context %}

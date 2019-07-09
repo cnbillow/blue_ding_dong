@@ -1,0 +1,169 @@
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.company-js-box {
+	padding-top: 70px;
+}
+
+.cjs-content {
+	padding: 20px 15% 70px 15%;
+	color: #565656;
+	line-height: 38px;
+	border-bottom: 1px solid #EFEFEF;
+	font-size: 17px;
+}
+.delp-box-ab {
+	padding: 70px 0 90px 0;
+}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.company-js-box {
+	padding-top: 70px;
+}
+
+.cjs-content {
+	padding: 20px 5% 70px 5%;
+	color: #565656;
+	line-height: 38px;
+	border-bottom: 1px solid #EFEFEF;
+	font-size: 17px;
+}
+.delp-box-ab {
+	padding: 60px 0 60px 0;
+}
+}
+
+/*愿景*/
+
+@media screen and (min-width: 600px) {
+	/*当屏幕尺寸大于600px时，应用下面的CSS样式*/
+	.abqy-item1 {
+		width: 32.33%;
+		float: left;
+		background: #2462AE;
+		border: 1px solid #eeeeee;
+		margin-right: 1%;
+		padding: 1px 1px;
+	}
+	.nei-box1 {
+		margin: 10px;
+		border: 1px solid #eeeeee;
+		padding: 35px 10px 25px 10px;
+		text-align: center;
+	}
+	.abqy-item2 {
+		width: 32.33%;
+		float: left;
+		background: #2462AE;
+		margin: 0 .5%;
+		padding: 1px 1px;
+	}
+	.abqy-item3 {
+		width: 32.33%;
+		float: left;
+		background: #2462AE;
+		margin-left: 1%;
+		padding: 1px 1px;
+	}
+	.abqi-bt {
+		color: #fff;
+		font-size: 25px;
+		text-align: center;
+		font-weight: 320;
+	}
+	.abqi-img {
+		width: 40%;
+		/*float: right;*/
+		margin: 0 auto;
+		height: 30px;
+		line-height: 30px;
+	}
+	.abqi-img-2 {
+		width: 28%;
+		/*float: right;*/
+		height: 30px;
+		line-height: 30px;
+		margin: 0 auto;
+	}
+	.abqi-img-3 {
+		width: 55%;
+		height: 30px;
+		line-height: 30px;
+		margin: 0 auto;
+		/*float: right;*/
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.abqy-item1 {
+		width: 100%;
+		margin-bottom: 15px;
+		background: #feb875;
+		margin-right: 1%;
+		padding: 60px 45px;
+	}
+	.abqy-item2 {
+		width: 100%;
+		background: #fda147;
+		margin: 0 .5%;
+		padding: 60px 45px;
+		margin-bottom: 15px;
+	}
+	.abqy-item3 {
+		width: 100%;
+		margin-bottom: 15px;
+		background: #fd8919;
+		padding: 60px 45px;
+	}
+	.abqi-bt {
+		color: #563402;
+		font-size: 25px;
+		text-align: center;
+		font-weight: 320;
+	}
+	.abqi-img {
+		width: 40%;
+		margin: 0 auto;
+		height: 30px;
+		line-height: 30px;
+	}
+	.abqi-img-2 {
+		width: 28%;
+		margin: 0 auto;
+		height: 30px;
+		line-height: 30px;
+	}
+	.abqi-img-3 {
+		width: 55%;
+		height: 30px;
+		line-height: 30px;
+		margin: 0 auto;
+	}
+}
+
+.abqi-text {
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 35px;
+	height: 100px;
+	margin: 50px 0;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.abqi-text2 {
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 35px;
+	height: 100px;
+	margin: 50px 0;
+	text-align: center;
+}
+
+.abqi-img2 {
+	margin-top: 25px;
+	width: 55%;
+	margin: 0 auto;
+}
